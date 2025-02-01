@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import Nabar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
+import ServiceCard from './components/ServiceCard.jsx'
+import Service from './components/Service.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -8,6 +11,8 @@ function App() {
     <>
    <Nabar/>
     <Hero/>
+    <Service/>
+    <Footer/>
     </>
   )
 }
