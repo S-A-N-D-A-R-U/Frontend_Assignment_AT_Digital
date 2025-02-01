@@ -1,4 +1,16 @@
 @import "tailwindcss";
   
-
+@theme {
+    
+    /* Primary and Secondary Colors */
+    --color-primary: #4f46e5;
+    --color-secondary: #f28d35;
+  
+    /* Analogous Colors */
+    --color-analogous-1: #6a44f2;
+    --color-analogous-2: #1cbddd; 
+  
+  
+  }
+  
 

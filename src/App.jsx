@@ -1,12 +1,11 @@
 import { useState } from 'react'
+import Nabar from './components/Navbar.jsx'
 
 function App() {
 
   return (
     <>
-      <h1 class="text-primary font-bold text-3xl ">
-    Hello world!
-  </h1>
+    <Nabar/>
     </>
   )
 }
