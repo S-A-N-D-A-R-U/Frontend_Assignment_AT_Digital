@@ -1,19 +1,23 @@
 import React from "react";
+import LMButton from "./LMButton";
 
-const ServiceCard = ({ title, description, imgURL }) => {
+const ServiceCard = ({ title, description, imgURL, reverse }) => {
   return (
-    <div className="bg-white w-[85rem] mx-auto p-8 flex flex-col md:flex-row rounded-lg">
-      <div className="max-w-[400px]">
-        <img src={imgURL} alt="image1" />
+    <div
+      className={`bg-white mx-auto p-8 flex flex-col md:flex-row ${
+        reverse ? "md:flex-row-reverse" : ""
+      } items-center gap-8 rounded-lg  max-w-5xl`}
+    >
+      {/* Image Section */}
+      <div className="w-52 h-52 md:w-72 md:h-72 flex-shrink-0">
+        <img src={imgURL} alt={title} className="w-full h-full object-contain" />
       </div>
-      <div className="flex flex-col  justify-center">
-        <div className="max-w-[600px]">
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-gray-600 mt-2">{description}</p>
-          <button className="mt-4 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-opacity-80 transition">
-            Learn More
-          </button>
-        </div>
+
+      {/* Content Section */}
+      <div className="text-center md:text-left">
+        <h3 className="text-2xl  text-primary  font-bold">{title}</h3>
+        <p className="text-gray-600 md:text-lg mt-2">{description}</p>
+        <LMButton/>
       </div>
     </div>
   );

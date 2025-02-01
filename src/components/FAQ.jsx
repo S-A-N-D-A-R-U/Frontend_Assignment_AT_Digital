@@ -1,6 +1,6 @@
 import React from "react";
 import FAQItem from "./FAQItem";
-import { faq } from "../constants/FAQ";
+import { faq } from "../constants/FAQ.js";
 
 const FAQ = () => {
   return (
