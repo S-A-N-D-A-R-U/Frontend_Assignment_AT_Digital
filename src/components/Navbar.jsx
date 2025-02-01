@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NAV_LINKS } from "../constants/navLinks";
 import { X, Menu } from "lucide-react";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/Logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
