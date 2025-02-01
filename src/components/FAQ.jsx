@@ -1,6 +1,6 @@
 import React from "react";
 import FAQItem from "./FAQItem";
-import { FAQ } from "../constants/FAQ.js";
+import { QUESTION } from "../constants/QUESTION";
 
 const FAQ = () => {
   return (
@@ -9,7 +9,7 @@ const FAQ = () => {
         Frequently asked questions
       </h1>
       <div className="flex flex-col gap-4">
-        {FAQ.map((item, index) => (
+        {QUESTION.map((item, index) => (
           <FAQItem question={item.question} answer={item.answer} />
         ))}
       </div>
