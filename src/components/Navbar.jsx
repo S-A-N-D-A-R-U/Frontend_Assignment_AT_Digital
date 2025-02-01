@@ -6,7 +6,7 @@ import Logo from "../assets/logo.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-primary text-white py-5 px-8">
+    <header className=" fixed top-0 w-full z-50 bg-primary text-white py-5 px-8">
       <div className="container mx-auto flex justify-between items-center ">
         <img src={Logo} alt="Brand Logo" className="md:w-56  w-28 h-auto" />
         <button className="md:hidden " onClick={() => setIsOpen(!isOpen)}>
